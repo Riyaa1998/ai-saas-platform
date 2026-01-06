@@ -1,2 +1,18 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Tell GitHub to consider these files as Python
+*.py linguist-detectable=true
+*.py linguist-language=Python
+
+# De-emphasize some non-Python files
+*.js linguist-vendored
+*.ts linguist-vendored
+*.tsx linguist-vendored
+*.css linguist-vendored
+*.json linguist-vendored
+*.md linguist-vendored
+*.lock linguist-vendored
+*.gitignore linguist-vendored
+*.gitattributes linguist-vendored
+
