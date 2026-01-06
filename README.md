@@ -28,26 +28,23 @@ A comprehensive AI-powered SaaS platform that empowers developers, designers, an
 - **AI Chat** - Intelligent conversation with context awareness
 
 ### 🚀 Core Functionality
-- Real-time processing with WebSockets
-- File upload and management
-- API rate limiting and usage tracking
+- API rate limiting with free tier
 - Subscription management with Stripe
-- Free tier with generous limits
-
+- User authentication and authorization
+- AI-powered content generation
 ### 📊 Analytics & Insights
-- Real-time user activity tracking
-- Usage analytics and reporting
-- Performance monitoring
-- Custom dashboard with key metrics
-- Data visualization tools
+- Token usage tracking and metrics
+- Feature usage statistics
+- User activity monitoring
+- Daily usage trends
+- Peak usage hours analysis
 
 ### 🐍 Python Integration
-- Robust Python backend services
-- Data processing pipelines
-- Machine learning model integration
-- API endpoints for AI services
-- Asynchronous task processing
-
+- FastAPI backend services for analytics
+- MongoDB integration for data storage
+- Usage tracking and analytics endpoints
+- User activity monitoring
+- Feature usage statistics
 ## �️ Tech Stack
 
 ### Frontend
@@ -163,6 +160,29 @@ A comprehensive AI-powered SaaS platform that empowers developers, designers, an
 
    Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
+## 📸 Screenshots
+
+### Homepage
+![Homepage](./images/homepage.png)
+
+### Dashboard
+![Dashboard](./images/dashboard.png)
+
+### Code Generation
+![Code Generation](./images/code%20generation.png)
+
+### Image Generation
+![Image Generation](./images/image%20generation.png)
+
+### Conversation
+![Conversation](./images/conversation.png)
+
+
+### Speech to Text
+![Speech to Text](./images/speechtotext.png)
+
+### Analytics Dashboard
+![Analytics Dashboard](./images/ANALYTICS%20DASHBOARD.png)
 
 ## 📚 Documentation
 
