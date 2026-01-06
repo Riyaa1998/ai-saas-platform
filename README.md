@@ -1,4 +1,4 @@
-# AI-SaaS (Software as a Service with Integrated Analytics)
+# AI-SaaS Platform (Software as a Service) with Integrated Analytics
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Next.js](https://img.shields.io/badge/Next.js-13-000000?logo=next.js)](https://nextjs.org/)
