@@ -1,20 +1,31 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-# Help GitHub better detect Python files
+# Boost Python's representation
 *.py linguist-detectable=true
 *.py linguist-language=Python
 
-# Only vendor specific files that shouldn't count as primary code
+# De-emphasize some non-Python files that are less important
 package-lock.json linguist-vendored
 *.lock linguist-vendored
 *.min.js linguist-vendored
 *.min.css linguist-vendored
 *.bundle.js linguist-vendored
 
-# Help with TypeScript/JavaScript detection
+# Help with TypeScript/JavaScript detection but reduce their weight
 *.tsx linguist-language=TypeScript
 *.ts linguist-language=TypeScript
 *.js linguist-language=JavaScript
+
+# De-emphasize some common directories that might be pulling down Python percentage
+node_modules/** linguist-vendored
+.next/** linguist-vendored
+out/** linguist-vendored
+build/** linguist-vendored
+coverage/** linguist-vendored
+
+# Ensure Python files in all directories are counted
+**/*.py linguist-language=Python
+
 
 
