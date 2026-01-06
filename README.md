@@ -1,4 +1,4 @@
-# AI-SaaS (Software as a Service) Platform with Integrated Analytics
+# AI-SaaS (Software as a Service with Integrated Analytics)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Next.js](https://img.shields.io/badge/Next.js-13-000000?logo=next.js)](https://nextjs.org/)
@@ -48,7 +48,51 @@ A comprehensive AI-powered SaaS platform that empowers developers, designers, an
 - API endpoints for AI services
 - Asynchronous task processing
 
-## 🚀 Getting Started
+## �️ Tech Stack
+
+### Frontend
+- **Next.js 13** - React framework for server-rendered applications
+- **React 18** - Frontend library for building user interfaces
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **Shadcn UI** - Beautifully designed components
+- **Zustand** - State management
+- **React Query** - Data fetching and caching
+- **Framer Motion** - Animation library
+
+### Backend
+- **Node.js** - JavaScript runtime
+- **Next.js API Routes** - API endpoints
+- **Python** - For AI/ML services
+- **FastAPI** - Python web framework for AI services
+- **Prisma** - Database ORM
+- **MongoDB** - NoSQL database
+- **Redis** - Caching and real-time features
+
+### AI/ML
+- **OpenAI API** - For text generation and processing
+- **Replicate AI** - For running ML models
+- **Hugging Face** - For various ML models
+- **LangChain** - For building LLM applications
+
+### DevOps & Infrastructure
+- **Docker** - Containerization
+- **Vercel** - Frontend deployment
+- **Railway/Heroku** - Backend deployment
+- **GitHub Actions** - CI/CD pipelines
+- **Prometheus & Grafana** - Monitoring
+
+### Authentication & Payments
+- **Clerk** - Authentication and user management
+- **Stripe** - Payment processing
+- **JWT** - Secure API authentication
+
+### Analytics
+- **PostHog** - Product analytics
+- **Sentry** - Error tracking
+- **Vercel Analytics** - Performance monitoring
+
+## �🚀 Getting Started
 
 ### Prerequisites
 
@@ -119,21 +163,6 @@ A comprehensive AI-powered SaaS platform that empowers developers, designers, an
 
    Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-## 🏗 Project Structure
-
-```
-.
-├── app/                    # App router
-│   ├── api/               # API routes
-│   ├── (auth)/            # Authentication pages
-│   ├── (dashboard)/       # Protected dashboard routes
-│   └── (landing)/         # Public landing pages
-├── components/            # Reusable UI components
-├── lib/                   # Utility functions and configurations
-├── prisma/                # Database schema and migrations
-├── public/                # Static files
-└── styles/                # Global styles
-```
 
 ## 📚 Documentation
 
