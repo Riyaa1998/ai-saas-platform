@@ -1,0 +1,46 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("MONGODB_URI")
+}
+
+model User {
+  id            String      @id @default(auto()) @map("_id") @db.ObjectId
+  name          String?
+  email         String?     @unique
+  emailVerified DateTime?
+  image         String?
+  plan          PlanType    @default(FREE)
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  usageLogs     UsageLog[]
+}
+
+model UsageLog {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId      String   @db.ObjectId
+  user        User     @relation(fields: [userId], references: [id])
+  feature     String   // e.g., "IMAGE_GENERATION", "TEXT_ANALYSIS"
+  tokensUsed  Int
+  inputTokens Int
+  outputTokens Int
+  cost        Float
+  metadata    Json?    // Additional metadata about the request
+  createdAt   DateTime @default(now())
+  
+  @@index([userId])
+  @@index([feature])
+  @@index([createdAt])
+}
+
+enum PlanType {
+  FREE
+  PRO
+  ENTERPRISE
+}
